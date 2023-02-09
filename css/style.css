@@ -28,12 +28,12 @@ body{
     width: 70%;
 }
 
-h1{
+h1 {
     font-size: 1.1rem;
     font-family: var(--font-inter);
     border: 1px solid #8E54E9;
-    padding: 0.7rem;
-    border-radius:3px;
+    padding: 0.5rem 1.7rem;
+    border-radius: 3px;
 }
 
 /* ===================banner=============== */
@@ -74,8 +74,8 @@ h1{
 }
 
 /* ================right============= */
-.right-image-banner{
-    width: 50%;
+.right-image-banner {
+    width: 373px;
     background: white;
     height: 355px;
     color: black;
@@ -141,7 +141,7 @@ color: white;
 
 /* =========MOBILE============= */
 
-@media (max-width:500px){
+@media (max-width:1170px){
     #hero .box-hero{
         width: 100%;
         margin-inline: auto;
@@ -164,8 +164,8 @@ color: white;
        width: 100%;
     }
     /* =============right====== */
-    .right-image-banner{
-        width: 90%;
+    .right-image-banner {
+        width: 373px;
         background: white;
         height: 355px;
         color: black;

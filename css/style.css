@@ -146,8 +146,9 @@ color: white;
  padding: 0.5rem;
 }
 
+/* ======================courses============== */
 #courses{
-    margin-top: 80px;
+    margin-top: 104px;
     width: 100%;
     display: flex;
     justify-content: center;

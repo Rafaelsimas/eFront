@@ -5,6 +5,7 @@ body{
 
 :root{
     --font-inter:'Inter', sans-serif;
+    --default-color:#8E54E9;
 }
 
 *{
@@ -31,9 +32,15 @@ body{
 h1 {
     font-size: 1.1rem;
     font-family: var(--font-inter);
-    border: 1px solid #8E54E9;
+    border: 1px solid var(--default-color);
     padding: 0.5rem 1.7rem;
     border-radius: 3px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+h1:hover{
+    background: var(--default-color);
 }
 
 /* ===================banner=============== */
@@ -62,6 +69,7 @@ h1 {
 
 #hero .box-hero img{
     margin-bottom: 30px;
+    cursor: pointer;
 }
 
 #hero .box-hero .left-text p {
@@ -137,6 +145,66 @@ color: white;
  font-size: 0.8rem;
  padding: 0.5rem;
 }
+
+#courses{
+    margin-top: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#courses .box-courses{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-inline: auto;
+    justify-content: center;
+}
+
+#courses .box-courses .card-course{
+    width: 380px;
+    position: relative;
+}
+
+
+#courses .box-courses .card-course img{
+    width: 380px;
+    height: 380px;
+    object-fit: cover;
+}
+
+#courses .box-courses .card-course .info-course {
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 8px 32px 0 rgb(31 38 135 / 8%);
+    backdrop-filter: blur( 8.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border: 1px solid rgba(45, 16, 124, 0);
+    position: absolute;
+    top: 192px;
+    padding: 0.5rem;
+    height: 250px;
+}
+#courses .box-courses .card-course .info-course h3 {
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+    font-family: var(--font-inter);
+}
+#courses .box-courses .card-course .info-course p {
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    font-family: sans-serif;
+    line-height: 22px;
+   
+}
+#courses .box-courses .card-course .info-course button {
+    background: var(--default-color);
+    padding: 0.5rem 0.9rem;
+    color: white;
+    border: none;
+   bottom: 0;
+}
+
 
 
 /* =========MOBILE============= */

@@ -14,9 +14,15 @@ function renderDataInfoOnScreen(){
         <p>
         ${card.description}
         </p>
-        <button>Ingressar na turma</button>
+        <button>R$ ${card.valorCurso.toFixed(2)}</button>
     </div>
 </div>
     `
 })
 }
+
+
+
+
+
+

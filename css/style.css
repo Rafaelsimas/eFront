@@ -274,7 +274,7 @@ color: white;
 
 #by-courses .card-by-course img {
     width: 450px;
-    height: 511px;
+    height: 398px;
     object-fit: cover;
 }
 
@@ -290,16 +290,13 @@ color: white;
     margin-inline: auto;
     display: flex;
     justify-content: space-between;
+    text-align: left;
     gap: 1.5rem;
 }
 .box-calculate-price .options-left{
-    width: 50%;
-   display: flex;
-   flex-direction: column;
-   justify-content: left;
-   text-align: left;
-   align-items: center;
-   gap: 1.9rem;
+   padding: 1.8rem;
+   line-height: 30px;
+   width: 50%;
 }
 .box-calculate-price .options-right{
     width: 50%;

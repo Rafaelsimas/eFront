@@ -315,7 +315,43 @@ color: white;
    color: white;
 }
 
+/* ====================FORM====================== */
+form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+form .box-form{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+form .box-form .form-left{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  line-height: 30px;
+  font-family: var(--font-inter);
 
+}
+form .box-form .form-right{
+  width: 50%;
+  text-align: center;
+}
+form .box-form .form-right .priceInfo{
+  font-size: 1.9rem;
+  font-family: var(--font-inter);
+  margin-bottom: 30px;
+}
+form .box-form .form-right input[type='button']{
+  width: 50%;
+  border-radius: 3px;
+  background: var(--default-color);
+  color: white;
+  padding: 0.8rem;
+}
 /* =========MOBILE============= */
 
 @media (max-width:1170px){

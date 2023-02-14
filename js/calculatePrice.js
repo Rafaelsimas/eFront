@@ -1,29 +1,30 @@
-let display = document.querySelector('#display')
-let total;
-let price;
-let course;
 
-let contador = 0
+         //add values of selected to check boxes and display totals
+         function calcTotal()
+         {
+            var itemTotal = 0;
+            var items = document.getElementsByTagName("input");
+            //js variable items for all HTML elements w the input tag
 
-function calculate(id, valor){
-    course = id
-    price = valor
-    if(contador <= 0){
-        display.innerHTML = price
-        contador += 1
-        return
-    }else if(contador >= 0){
-        display.innerHTML = (price += 25)
-        contador += 2
-        return
-    }else if(contador >= 1){
-        display.innerHTML =( price += 50)
-        contador += 3
-        return
-    }else if(contador >= 2){
-        display.innerHTML = (price += 100)
-        return
-    }
-}
+            for (var i = 0; i < 11; i++)
+            {
+               if (items[i].checked)//if the item is checked
+               {
+                  itemTotal += (items[i].value * 1);//then item total is updated to the previous total + value of checked item. Mutplied by 1 so that JS knows that it is a num
+               }
 
-console.log(display);
+               document.getElementById("total").innerHTML = "Valor total:  R$" + itemTotal + ".00";
+               //inner HTML fills in the space between the opening and closing <p> tags with the total
+            }
+         }
+
+         //backwards compatibility for event listener submit button
+         var calcButton = document.getElementById("calcButton"); //sButton HTML element is assign JS value of submitButton
+         if (calcButton.addEventListener) //now you can add event listener
+         {
+            calcButton.addEventListener("click", calcTotal, false); //event is click, action is calctotal, false for bwc
+         }
+         else if (calcButton.attachEvent)
+         {
+            calcButton.attachEvent("onclick", calcTotal);   
+         }
